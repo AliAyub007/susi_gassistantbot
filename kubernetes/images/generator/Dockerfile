@@ -5,9 +5,9 @@ ARG BRANCH
 ARG REPOSITORY
 
 ENV COMMIT_HASH ${COMMIT_HASH:-null}
-ENV BRANCH ${BRANCH:-master}
-ENV REPOSITORY ${REPOSITORY:-https://github.com/fossasia/susi_viberbot.git}
-ENV INSTALL_PATH /viber
+ENV BRANCH ${BRANCH:-development}
+ENV REPOSITORY ${REPOSITORY:-https://github.com/AliAyub007/susi_gassistantbot.git}
+ENV INSTALL_PATH /google
 
 RUN mkdir -p $INSTALL_PATH
 
@@ -17,6 +17,6 @@ COPY . .
 
 RUN bash setup.sh
 
-WORKDIR $INSTALL_PATH/susi_viberbot
+WORKDIR $INSTALL_PATH/susi_gassistantbot
 
 CMD [ "npm", "start" ]
