@@ -5,8 +5,8 @@ ARG BRANCH
 ARG REPOSITORY
 
 ENV COMMIT_HASH ${COMMIT_HASH:-null}
-ENV BRANCH ${BRANCH:-development}
-ENV REPOSITORY ${REPOSITORY:-https://github.com/AliAyub007/susi_gassistantbot.git}
+ENV BRANCH ${BRANCH:-master}
+ENV REPOSITORY ${REPOSITORY:-https://github.com/fossasia/susi_gassistantbot.git}
 ENV INSTALL_PATH /google
 
 RUN mkdir -p $INSTALL_PATH

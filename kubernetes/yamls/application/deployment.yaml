@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: google
-        image: fossasia/susi_gassistantbot:latest
+        image: fossasia/susi_gassistantbot:latest-master
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
